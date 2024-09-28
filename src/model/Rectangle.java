@@ -16,7 +16,7 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public Rectangle clone() {
+    public Rectangle getClone() {
         return new Rectangle(this);
     }
 

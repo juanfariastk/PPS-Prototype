@@ -16,7 +16,7 @@ public class Triangle extends Shape {
     }
 
     @Override
-    public Triangle clone() {
+    public Triangle getClone() {
         return new Triangle(this);
     }
 

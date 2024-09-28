@@ -1,6 +1,6 @@
 package model;
 
-public abstract class Shape implements Cloneable {
+public abstract class Shape implements Prototype {
     public int x;
     public int y;
     public String color;
@@ -16,13 +16,8 @@ public abstract class Shape implements Cloneable {
         }
     }
 
-    @Override
-    public Shape clone() {
-        try {
-            return (Shape) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
-        }
+    public Prototype getClone() {
+        return null;
     }
 
     public abstract void draw();

@@ -24,9 +24,9 @@ public class Main {
         triangle.color = "green";
 
 
-        Circle clonedCircle = circle.clone();
-        Rectangle clonedRectangle = rectangle.clone();
-        Triangle clonedTriangle = triangle.clone();
+        Circle clonedCircle = circle.getClone();
+        Rectangle clonedRectangle = rectangle.getClone();
+        Triangle clonedTriangle = triangle.getClone();
 
 
         System.out.println("Original objects:");
